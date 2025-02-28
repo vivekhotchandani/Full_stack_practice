@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monuments Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between mb-3">
+            <button class="btn btn-primary" id="addMonument">Add Monument</button>
+            <input type="text" id="searchMonument" class="form-control w-25" placeholder="Search Monument">
+        </div>
+        <div class="row" id="monumentGallery">
+            <!-- Default Monuments -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Taj_Mahal_2012.jpg" class="card-img-top" alt="Taj Mahal">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal</h5>
+                        <p class="card-text">A famous white marble mausoleum in Agra, India.</p>
+                        <p class="card-text"><small class="text-muted">Agra</small></p>
+                        <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" class="card-img-top" alt="Eiffel Tower">
+                    <div class="card-body">
+                        <h5 class="card-title">Eiffel Tower</h5>
+                        <p class="card-text">An iconic iron structure in Paris, France.</p>
+                        <p class="card-text"><small class="text-muted">Paris</small></p>
+                        <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Statue_of_Liberty%2C_NY.jpg" class="card-img-top" alt="Statue of Liberty">
+                    <div class="card-body">
+                        <h5 class="card-title">Statue of Liberty</h5>
+                        <p class="card-text">A symbol of freedom in New York, USA.</p>
+                        <p class="card-text"><small class="text-muted">New York</small></p>
+                        <button class="btn btn-warning btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
